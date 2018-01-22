@@ -54,8 +54,8 @@ export default class LandingPage extends Component {
                 />
               </header>
               <section className="modal-card-body">
-                <p class="image is-2by1">
-                  <img src={this.state.img} />
+                <p className="image is-2by1">
+                  <img src={this.state.img} alt="img" />
                 </p>
 
                 <br />
@@ -64,10 +64,10 @@ export default class LandingPage extends Component {
             </div>
           </div>
 
-          <div class="hero-body">
-            <div class="container">
-              <h1 class="title is-2">Portfolio</h1>
-              <h2 class="subtitle is-4">Recent Projects</h2>
+          <div className="hero-body">
+            <div className="container">
+              <h1 className="title is-2">Portfolio</h1>
+              <h2 classNAme="subtitle is-4">Recent Projects</h2>
             </div>
           </div>
         </section>
@@ -79,38 +79,40 @@ export default class LandingPage extends Component {
               <div className="tile is-ancestor">
                 <div className="tile is-child is-6 " id="shadow">
                   <figure className="image is-2by1" id="figure">
-                    <img src={Fittr} />
+                    <img src={Fittr} alt="img" />
                     <div
                       className="overlay"
                       onClick={() => this.toggleModal(Fittr)}
                     >
-                      <div class="text">
-                        <h1>Fittr</h1>
-                        <p>
-                          | React | Redux | NodeJS | SQL | Express | REST API |
-                          SASS |VictoryJS |
-                        </p>
+                      <div className="text">
+                        <h1>
+                          <strong>Fittr</strong>
+                        </h1>
+                        <p>ReactJs | Redux | Node | SQL |</p>
+                        <p> Express | REST API | Sass | VictoryJS</p>
                       </div>
                     </div>
                   </figure>
                   <div>
                     <a
-                      class="button is-link"
+                      className="button is-link"
                       href="https://github.com/FitTracker/Fitness-Goal-Tracker"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <span class="icon is-small">
-                        <i class="fa fa-github-alt" />
+                      <span className="icon is-small">
+                        <i className="fa fa-github-alt" />
                       </span>
                       <span>Github </span>
                     </a>
                     <a
-                      class="button is-primary"
+                      className="button is-primary"
                       href="http://www.fittr.us"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <span class="icon is-small">
-                        <i class=" fa fa-arrow-circle-up " />
+                      <span className="icon is-small">
+                        <i className=" fa fa-arrow-circle-up " />
                       </span>
                       <span>Live site </span>
                     </a>
@@ -118,38 +120,40 @@ export default class LandingPage extends Component {
                 </div>
                 <div className="tile is-child is-6 " id="shadow">
                   <figure className="image is-2by1" id="figure">
-                    <img src={Random} />
+                    <img src={Random} alt="img" />
                     <div
                       className="overlay"
                       onClick={() => this.toggleModal(Random)}
                     >
-                      <div class="text">
-                        <h1>Favorite Beer</h1>
-                        <p>
-                          React | NodeJS | SQL | Express | REST API | Stripe |
-                          Bulma
-                        </p>
+                      <div className="text">
+                        <h1>
+                          <strong>Favorite Beer</strong>
+                        </h1>
+                        <p>ReactJs | Node | SQL | </p>
+                        <p>Express | REST API | Stripe | Bulma</p>
                       </div>
                     </div>
                   </figure>
                   <div>
                     <a
-                      class="button is-link "
+                      className="button is-link "
                       href="https://github.com/valcodes/beer/"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <span class="icon is-small">
-                        <i class="fa fa-github-alt" />
+                      <span className="icon is-small">
+                        <i className="fa fa-github-alt" />
                       </span>
                       <span>Github </span>
                     </a>
                     <a
-                      class="button is-primary"
+                      className="button is-primary"
                       href="https://www.favbeer.com"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      <span class="icon is-small">
-                        <i class=" fa fa-arrow-circle-up " />
+                      <span className="icon is-small">
+                        <i className=" fa fa-arrow-circle-up " />
                       </span>
                       <span>Live site </span>
                     </a>
@@ -159,10 +163,10 @@ export default class LandingPage extends Component {
             </div>
           </div>
         </section>
-        <section class="hero is-primary" id="skills">
-          <div class="hero-body">
-            <div class="container">
-              <h1 class="title is-2">Skills</h1>
+        <section className="hero is-primary" id="skills">
+          <div className="hero-body">
+            <div className="container">
+              <h1 className="title is-2">Skills</h1>
               {/* <h2 class="subtitle">Recent Projects</h2> */}
             </div>
           </div>
@@ -172,32 +176,68 @@ export default class LandingPage extends Component {
 
           <div className="hero-body">
             <div className="container has-text-centered">
-              <a className="button is-primary is-inverted is-outlined">
+              <a
+                className="button is-primary is-inverted is-outlined"
+                id="buttons"
+              >
                 React.js
               </a>
 
-              <a className="button is-primary is-inverted is-outlined">
+              <a
+                className="button is-primary is-inverted is-outlined "
+                id="buttons"
+              >
                 JavaScript
               </a>
 
-              <a className="button is-primary is-inverted is-outlined">
+              <a
+                className="button is-primary is-inverted is-outlined"
+                id="buttons"
+              >
                 Node.js
               </a>
-              <a className="button is-primary is-inverted is-outlined">
+              <a
+                className="button is-primary is-inverted is-outlined"
+                id="buttons"
+              >
                 Angular.js
               </a>
-              <a className="button is-primary is-inverted is-outlined">HTML5</a>
-              <a className="button is-primary is-inverted is-outlined">CSS</a>
-              <a className="button is-primary is-inverted is-outlined">
+              <a
+                className="button is-primary is-inverted is-outlined"
+                id="buttons"
+              >
+                HTML5
+              </a>
+              <a
+                className="button is-primary is-inverted is-outlined"
+                id="buttons"
+              >
+                CSS
+              </a>
+              <a
+                className="button is-primary is-inverted is-outlined"
+                id="buttons"
+              >
                 Express
               </a>
-              <a className="button is-primary is-inverted is-outlined">
+              <a
+                className="button is-primary is-inverted is-outlined"
+                id="buttons"
+              >
                 PostgreSQL
               </a>
-              <a className="button is-primary is-inverted is-outlined">
+              <a
+                className="button is-primary is-inverted is-outlined"
+                id="buttons"
+              >
                 Sass/Scss
               </a>
-              <a className="button is-primary is-inverted is-outlined">Git</a>
+              <a
+                className="button is-primary is-inverted is-outlined"
+                id="buttons"
+              >
+                Git
+              </a>
             </div>
           </div>
         </section>
@@ -225,7 +265,7 @@ export default class LandingPage extends Component {
                 </div>
                 <div className="tile is-child is-2 ">
                   <figure className="image is-128x128">
-                    <img src={valentina} />
+                    <img src={valentina} alt="img" />
                   </figure>
                 </div>
               </div>
@@ -254,6 +294,7 @@ export default class LandingPage extends Component {
                 class="button is-large"
                 href="https://github.com/valcodes"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <span class="icon is-medium">
                   <i class="fa fa-github-alt" />
@@ -264,6 +305,7 @@ export default class LandingPage extends Component {
                 class="button is-large"
                 href="https://www.linkedin.com/in/valcodes/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <span class="icon is-medium">
                   <i class="fa fa-linkedin-square" />

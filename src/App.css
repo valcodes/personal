@@ -21,7 +21,7 @@ figure {
   width: 80%;
 }
 .hero-body a {
-  margin-left: 3vh;
+  margin: 1vh;
 }
 
 .text {
@@ -30,6 +30,7 @@ figure {
   font-size: 20px;
   position: absolute;
   overflow: hidden;
+  font-size: 1em;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -41,6 +42,7 @@ figure {
   bottom: 100%;
   left: 0;
   right: 0;
+  word-wrap: break-word;
   background-color: #00d3b3;
   overflow: hidden;
   width: 100%;
@@ -50,6 +52,11 @@ figure {
 #figure:hover .overlay {
   bottom: 0;
   height: 100%;
+  cursor: zoom-in;
+}
+
+#buttons:hover {
+  cursor: default;
 }
 
 #home {
